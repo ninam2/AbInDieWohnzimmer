@@ -1,0 +1,27 @@
+h1{
+    font-family: Futura, sans-serif;
+    font-stretch: condensed;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+p{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.footer-container{
+    position:fixed;
+    width: 100%;
+    background: #ebeef0;
+    bottom: 0px;
+    z-index: 4;
+}
+.footer {
+    text-align: center;
+    margin:0;
+    padding:0;
+    color:#000; /* Base text color for the menu */
+}
+.footer li {
+    display:inline;
+    list-style:none;}
