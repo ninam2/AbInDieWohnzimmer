@@ -22,10 +22,19 @@
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                scrollOverflow: true
-            });
+                scrollOverflow: true,
+                controlArrows: true 
+            }); 
         });
 
+        function next(){
+        
+        }
+        
+        function prev(){
+        
+        }
+        
     </script>
 
 </head>
@@ -47,7 +56,6 @@
                 </li>
                 <li><a href="#">Orte der Vielfalt</a>
                     <ul>
-                        <li class="dir"><a href="#">Sub Menu 1</a></li>
                         <li><a href="#">Ort 1</a></li>
                         <li><a href="#">Ort 2</a></li>
                         <li><a href="#">Ort 3</a></li>
@@ -216,5 +224,13 @@
         </ul>
     </nav>
 </div>-->
+
+    <div id="left_arrow">
+        <img onclick="prev()" class="arrow_img" src="../ressources/arrow_left.png">
+    </div>
+    <div id="right_arrow">
+        <img onclick="next()" class="arrow_img" src="../ressources/arrow_right.png">
+    </div>
+    
 </body>
 </html>

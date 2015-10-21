@@ -1,0 +1,27 @@
+#mapOfDiversity {
+    width: 100%;
+
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 90%;
+    background-color: #ebeef0;
+    margin: 50px 5%;
+}
+
+.point_img {
+    width: 100%;
+
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+
+}
+
+area {
+    cursor: pointer;
+}

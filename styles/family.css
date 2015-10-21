@@ -17,18 +17,28 @@
     background-color: #f17f51;
 }
 
-.content_container {
-    padding-top: 100px;
-    width: 100%;
-    height: 100%;
-}
-
-.content {
-    margin: 0 auto;
-    max-width: 1000px;
-
-}
-
 .familyTextBlock{
     margin-bottom: 1.5%;
+}
+
+#left_arrow{
+    z-index: 5;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    height: 50%;
+    vertical-align: middle;
+}
+
+#right_arrow{
+    z-index: 5;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    vertical-align: middle;
+}
+
+.arrow_img {
+    height: 100%;
 }
