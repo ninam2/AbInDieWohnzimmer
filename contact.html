@@ -46,67 +46,69 @@
         </ul>
     </nav>
 </div>
-<div id="fullpage">
-    <div class="content_container">
-        <div class="contact"><!-- @todo CHANGE DIV CLASS to ID in CSS -->
-            <h1>
-                Kontakt
-            </h1>
+<div class="contact"><!-- @todo CHANGE DIV CLASS to ID in CSS -->
 
-            <form action="" method="POST">
-                <table>
-                    <tr>
-                        <td><span>Sprache:</span></td>
-                        <td><select name="language" size="1">
-                            <option>Deutsch</option>
-                            <option>Englisch</option>
-                        </select></td>
-                    </tr>
+	<h1>Kontakt</h1>
 
-                    <tr>
-                        <td><label><span>Männlich</span><input type="radio" name="gender" value="male" checked/></label>
-                        </td>
-                        <td><label><span>Weiblich</span><input type="radio" name="gender" value="female"/></label></td>
-                    </tr>
-                    <tr>
-                        <td><span>Vor/Nachname:</span></td>
-                        <td><input type="text" name="firstname" value="<?php if (isset($firstname)) {
+	<!-- Contact form: formatted with table  -->
+	<form action="" method="POST" name="hans" value="13">
+		<table>
+			<tr>
+				<td><span>Sprache:</span></td>
+				<td><select name="language" size="1">
+						<option>Deutsch</option>
+						<option>Englisch</option>
+					</select></td>
+			</tr>
+
+			<tr>
+				<td><label><span>Weiblich</span><input type="radio" name="gender" value="female" checked/></label></td>
+				<td><label><span>Männlich</span><input type="radio" name="gender" value="male"/></label></td>
+			</tr>
+			<tr>
+				<td><span>Vor/Nachname:</span></td>
+				<td><input type="text" name="firstname" value="<?php if (isset($firstname)) {
 						echo $firstname;
 					} ?>"/>
-                            <input type="text" name="lastname" value="<?php if (isset($lastname)) {
+					<input type="text" name="lastname" value="<?php if (isset($lastname)) {
 						echo $lastname;
 					} ?>"/></td>
-                    </tr>
-                    <tr>
-                        <td><span>E-Mail:</span></td>
-                        <td><input type="text" name="email" value="<?php if (isset($mail)) {
+			</tr>
+			<tr>
+				<td><span>E-Mail:</span></td>
+				<td><input type="text" name="email" value="<?php if (isset($mail)) {
 						echo $mail;
 					} ?>" size="35"/></td>
-                    </tr>
-                    <tr>
-                        <td><span>Betreff:</span></td>
-                        <td><input type=" text" name="subject" value="<?php if (isset($subject)) {
+			</tr>
+			<tr>
+				<td><span>Betreff:</span></td>
+				<td><input type=" text" name="subject" value="<?php if (isset($subject)) {
 						echo $subject;
 					} ?>"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span>Nachricht:</span></td>
-                        <td>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Nachricht:</span></td>
+				<td>
 					<textarea style="resize:none" rows="5" name="message">
 
 					</textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" name="submit" value="Kontakformular Absenden!"/></td>
-                    </tr>
-                </table>
-            </form>
-            <?php
-	if (isset($_POST['submit'], $_POST['firstname'], $_POST['lastname'])) {
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Kontakformular Absenden!"/></td>
+			</tr>
+		</table>
+	</form>
 
+	<?php
 
+	//  Check the contact form for complete values
+
+	if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['submit'])
+		&& !empty($_POST['email']) && !empty($_POST['subject']) && ! empty($_POST['message'])) {
+
+		// initalize variables with values from the form
 		$language = htmlspecialchars($_POST['language']);
 		$gender = htmlspecialchars($_POST['gender']);
 		$firstname = htmlspecialchars($_POST['firstname']);
@@ -114,45 +116,54 @@
 		$mail = htmlspecialchars($_POST['email']);
 		$subject = htmlspecialchars($_POST['subject']);
 		$msg = htmlspecialchars($_POST['message']);
-
 		$msg = nl2br($msg);
+		$name = $firstname . ' ' . $lastname;
 
-		$name = $firstname . " " . $lastname;
-
-
-		if ($_POST['gender'] === "male" && $language === "Deutsch") {
-			$gender = "Herr";
-			$salutation = "geehrter";
-		} elseif ($_POST['gender'] === "male" && $language === "Englisch") {
-			$gender = "Mister";
-			$salutation = "";
-		} elseif ($_POST['gender'] === "female" && $language === "Deutsch") {
-			$gender = "Frau";
-			$salutation = "geehrte";
-		} elseif ($_POST['gender'] === "female" && $language === "Englisch") {
-			$gender = "Miss";
-			$salutation = "";
+		// language and gender check @todo avoid same conditions
+		if ($_POST['gender'] === 'male' && $language === 'Deutsch') {
+			$gender = 'Herr';
+			$salutation = 'geehrter';
+		} elseif ($_POST['gender'] === 'male' && $language === 'Englisch') {
+			$gender = 'Mister';
+			$salutation = '';
+		} elseif ($_POST['gender'] === 'female' && $language === 'Deutsch') {
+			$gender = 'Frau';
+			$salutation = 'geehrte';
+		} elseif ($_POST['gender'] === 'female' && $language === 'Englisch') {
+			$gender = 'Miss';
+			$salutation = '';
 		}
-#		mail($mail, $subject, $msg);
 
-		if ($language === "Deutsch") {
-			echo "Sehr " . $salutation . " " . $gender . " " . $name . ",<br/>";
-            echo "vielen Dank für ihre Kontaktanfrage mit dem Betreff " . "<b>" . $subject . "</b><br/>";
-            echo "und der folgenden Nachricht: <br/> <br/>" . $msg;
-            echo "<br/> Sie erhalten zusätzlich noch eine Bestätigungsmail! Wir werden uns bei Ihnen melden.";
+		// Send E-Mail to the User @todo test on live system
+		#mail($mail, $subject, $msg);
+	
+	/* PLACEHOLDER */
+		$empfanger = "timo.chrabkowski@axelspringer.de";
+	/* PLACEHOLDER */
 
-            } elseif ($language === "Englisch") {
-            echo "Dear " . $salutation . " " . $gender . " " . $name . ",<br/>";
-            echo "thanks for your contact request with the subject " . "<b>" . $subject . "</b><br/>";
-            echo "and the following message: <br/> <br/>" . nl2br($msg);
-            echo "<br/> You will receive a confirmation e-mail! We will contact you soon.";
-            }
+		// @todo send email to the ppls who look at those contact requests
+			#mail($empfanger, $subject, $msg);
+						
+		// confirmation that the contact form was filled out correctly *german*
+		if ($language === 'Deutsch') {
+			echo 'Sehr' . ' ' . $salutation . ' ' . $gender . ' ' . $name . ',<br/>';
+			echo 'vielen Dank für ihre Kontaktanfrage mit dem Betreff ' . '<b>' . $subject . '</b><br/>';
+			echo 'und der folgenden Nachricht:' . '<br/> <br/>' . $msg;
+			echo '<br/>' . 'Sie erhalten zusätzlich noch eine Bestätigungsmail! Wir werden uns bei Ihnen melden.';
 
-            }
+			// confirmation that the contact form was filled out correctly *english*
+		} elseif ($language === 'Englisch') {
+			echo 'Dear ' . $salutation . ' ' . $gender . ' ' . $name . ',<br/>';
+			echo 'thanks for your contact request with the subject ' . '<b>' . $subject . '</b><br/>';
+			echo 'and the following message: <br/> <br/>' . nl2br($msg);
+			echo '<br/> You will receive a confirmation e-mail! We will contact you soon.';
+		}
 
-            ?>
-        </div>
-    </div>
+	}
+
+	?>
+</div>
+
 
     <div class="footer-container">
         <ul class="footer">

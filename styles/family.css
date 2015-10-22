@@ -1,21 +1,25 @@
 
 #familypicture{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
 }
 
 #slide1 {
     background-color: #fff;
 }
+#slide1 h1{ color: #cdc76d}
+#slide1 hr{ background-color: #cdc76d}
 
 #slide2 {
-    background-color: #78e8bf;
+    background-color: #fff;
 }
 
+#slide2 h1{ color: #a3bf63}
+#slide2 hr{ background-color: #a3bf63}
+
 #slide3 {
-    background-color: #f17f51;
+    background-color: #fff;
 }
 
 .familyTextBlock{
@@ -50,4 +54,12 @@ border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) cadetblue;
 
 .familyTextBlock{
     margin-bottom: 5%;
+}
+
+@media screen and (max-width : 530px)  {
+    #familypicture{
+    margin-top: 20%;
+        
+}
+    
 }
