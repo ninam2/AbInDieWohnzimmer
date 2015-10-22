@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../styles/vendor/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/family.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/vendor/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/family.css"/>
     <link rel="stylesheet" type="text/css" href="../styles/nav.css"/>
     <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
 
@@ -20,7 +20,7 @@
     <script type="text/javascript" src="../js/vendor/jquery.fullPage.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#fullpage').fullpage({
                 scrollOverflow: true
             });
@@ -31,280 +31,379 @@
 </head>
 <body>
 
-    <div id="header_container">
-        <nav id="header">
-            <ul>
-                <li class="current-menu-item"><a href="#">Home</a></li>
-                <li>
-                    <a href="#">Karte</a>
-                </li>
-                <li><a href="#">Familien</a>
-                    <ul class = "lastItem">
-                        <li><a href="#slide1">Familie 1</a></li>
-                        <li><a href="#slide2">Familie 2</a></li>
-                        <li><a href="#test" class="lastItem">Familie 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Orte der Vielfalt</a>
-                    <ul>
-                        <!--<li class="dir"><a href="#">Sub Menu 1</a></li>-->
-                        <li><a href="#">Ort 1</a></li>
-                        <li><a href="#">Ort 2</a></li>
-                        <li><a href="#">Ort 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Das Projekt</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="fullpage">
-        <div class="section">
-            <div class="slide" id="slide1">
-                <div class="content_container">
-                    <div class="content">
-                        <h1>Familie 1</h1>
-                        <p>
-                            <img id="familypicture" src="../ressources/Platzhalter.jpg">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0" allowfullscreen></iframe>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+<div id="header_container">
+    <nav id="header">
+        <ul>
+            <li>
+                <a href="../AbInDieWohnzimmer/Karte/karte.html">Karte</a>
+            </li>
+            <li><a href="../AbInDieWohnzimmer/families/family.html">Familien</a>
+                <ul class="lastItem">
+                    <li><a href="../AbInDieWohnzimmer/families/family.html#slide1">Familie 1</a></li>
+                    <li><a href="../AbInDieWohnzimmer/families/family.html#slide2">Familie 2</a></li>
+                    <li><a href="../AbInDieWohnzimmer/families/family.html#test" class="lastItem">Familie 3</a></li>
+                </ul>
+            </li>
+            <li><a href="../AbInDieWohnzimmer/pointsOfDiversity/pointsOfDiversity.html">Orte der Vielfalt</a>
+                <ul>
+                    <!--<li class="dir"><a href="#">Sub Menu 1</a></li>-->
+                    <li><a href="#">Ort 1</a></li>
+                    <li><a href="#">Ort 2</a></li>
+                    <li><a href="#">Ort 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Das Projekt</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="fullpage">
+    <div class="section">
+        <div class="slide" id="slide1">
+            <div class="content_container">
+                <div class="content">
+                    <h1>Familie 1</h1>
 
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    <p>
+                        <img id="familypicture" src="../ressources/Platzhalter.jpg">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0"
+                                allowfullscreen></iframe>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
 
-                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
+                        dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat.
 
-                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+                        nulla facilisi.
 
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                        placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                        minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                        commodo consequat.
 
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis.
 
-                            Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos
+                        erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no
+                        rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat.
 
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        </p>
+                        Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
 
-                        <div class="familyTextBlock"><h1>Grübde für die Auswanderung</h1>
-                            .sfsdfdsfsd......
-                        </div>
-                        <div class="familyTextBlock">
-                            <h1>Essen und Trinken</h1>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+                    </p>
 
-                            Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam velit
-                            percipit in, his delenit
-                            dolorem
-                            in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
-                            ne, utinam
-                            eripuit
-                            blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0"
-                                    allowfullscreen></iframe>
-                            Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
-                            vel. Ex
-                            eius
-                            dicam
-                            has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
-
-                            Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
-                            comprehensam an, eu
-                            summo
-                            possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
-                            dictas,
-                            minim
-                            eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
-                            accusam
-                            omnesque.
-
-                            Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
-                            explicari
-                            sadipscing
-                            no
-                            mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
-
-                            Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
-                            percipitur id,
-                            rebum
-                            graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
-                            essent
-                            virtute
-                            quo,
-                            ullum tritani reformidans ei nam.
-
-                        </div>
-                        <div class="familyTextBlock">
-                            <h1>Religion</h1>Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam
-                            velit
-                            percipit in, his delenit
-                            dolorem
-                            in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
-                            ne, utinam
-                            eripuit
-                            blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
-
-                            Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
-                            vel. Ex
-                            eius
-                            dicam
-                            has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
-
-                            Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
-                            comprehensam an, eu
-                            summo
-                            possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
-                            dictas,
-                            minim
-                            eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
-                            accusam
-                            omnesque.
-
-                            Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
-                            explicari
-                            sadipscing
-                            no
-                            mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
-
-                            Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
-                            percipitur id,
-                            rebum
-                            graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
-                            essent
-                            virtute
-                            quo,
-                            ullum tritani reformidans ei nam.
-                        </div>
-                        <div class="familyTextBlock">
-                            <h1>Freizeitgestaltung</h1>
-                            ............
-                        </div>
+                    <div class="familyTextBlock"><h1>Grübde für die Auswanderung</h1>
+                        .sfsdfdsfsd......
                     </div>
-                </div>
-            </div>
-            <div class="slide" >
-                <div class="content_container" >
-                    <div class="content" id="slide2">
-                        <h1>Familie 2</h1>
-                        <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0" allowfullscreen></iframe>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    <div class="familyTextBlock">
+                        <h1>Essen und Trinken</h1>
 
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam velit
+                        percipit in, his delenit
+                        dolorem
+                        in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
+                        ne, utinam
+                        eripuit
+                        blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0"
+                                allowfullscreen></iframe>
+                        Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
+                        vel. Ex
+                        eius
+                        dicam
+                        has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
 
-                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                        Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
+                        comprehensam an, eu
+                        summo
+                        possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
+                        dictas,
+                        minim
+                        eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
+                        accusam
+                        omnesque.
 
-                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
+                        explicari
+                        sadipscing
+                        no
+                        mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
 
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+                        Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
+                        percipitur id,
+                        rebum
+                        graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
+                        essent
+                        virtute
+                        quo,
+                        ullum tritani reformidans ei nam.
 
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-
-                            Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
-
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        </p>
-
-                        <div class="familyTextBlock"><h1>Grübde für die Auswanderung</h1>
-                            .sfsdfdsfsd......
-                        </div>
-                        <div class="familyTextBlock">
-                            <h1>Essen und Trinken</h1>
-
-                            Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam velit
-                            percipit in, his delenit
-                            dolorem
-                            in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
-                            ne, utinam
-                            eripuit
-                            blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0"
-                                    allowfullscreen></iframe>
-                            Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
-                            vel. Ex
-                            eius
-                            dicam
-                            has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
-
-                            Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
-                            comprehensam an, eu
-                            summo
-                            possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
-                            dictas,
-                            minim
-                            eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
-                            accusam
-                            omnesque.
-
-                            Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
-                            explicari
-                            sadipscing
-                            no
-                            mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
-
-                            Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
-                            percipitur id,
-                            rebum
-                            graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
-                            essent
-                            virtute
-                            quo,
-                            ullum tritani reformidans ei nam.
-
-                        </div>
-                        <div class="familyTextBlock">
-                            <h1>Religion</h1>Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam
-                            velit
-                            percipit in, his delenit
-                            dolorem
-                            in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
-                            ne, utinam
-                            eripuit
-                            blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
-
-                            Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
-                            vel. Ex
-                            eius
-                            dicam
-                            has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
-
-                            Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
-                            comprehensam an, eu
-                            summo
-                            possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
-                            dictas,
-                            minim
-                            eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
-                            accusam
-                            omnesque.
-
-                            Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
-                            explicari
-                            sadipscing
-                            no
-                            mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
-
-                            Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
-                            percipitur id,
-                            rebum
-                            graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
-                            essent
-                            virtute
-                            quo,
-                            ullum tritani reformidans ei nam.
-                        </div>
-                        <div class="familyTextBlock">
-                            <h1>Freizeitgestaltung</h1>
-                            ............
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="slide" id="slide3">
-                <div class="content_container">
-                    <div class="content">
-                        <h1>Familie 3</h1>
+                    <div class="familyTextBlock">
+                        <h1>Religion</h1>Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam
+                        velit
+                        percipit in, his delenit
+                        dolorem
+                        in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
+                        ne, utinam
+                        eripuit
+                        blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
+
+                        Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
+                        vel. Ex
+                        eius
+                        dicam
+                        has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
+
+                        Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
+                        comprehensam an, eu
+                        summo
+                        possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
+                        dictas,
+                        minim
+                        eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
+                        accusam
+                        omnesque.
+
+                        Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
+                        explicari
+                        sadipscing
+                        no
+                        mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
+
+                        Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
+                        percipitur id,
+                        rebum
+                        graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
+                        essent
+                        virtute
+                        quo,
+                        ullum tritani reformidans ei nam.
+                    </div>
+                    <div class="familyTextBlock">
+                        <h1>Freizeitgestaltung</h1>
+                        ............
                     </div>
                 </div>
             </div>
         </div>
+        <div class="slide">
+            <div class="content_container">
+                <div class="content" id="slide2">
+                    <h1>Familie 2</h1>
+
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0"
+                                allowfullscreen></iframe>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
+                        dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat.
+
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+                        nulla facilisi.
+
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                        placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                        minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                        commodo consequat.
+
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis.
+
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos
+                        erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no
+                        rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat.
+
+                        Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+                    </p>
+
+                    <div class="familyTextBlock"><h1>Grübde für die Auswanderung</h1>
+                        .sfsdfdsfsd......
+                    </div>
+                    <div class="familyTextBlock">
+                        <h1>Essen und Trinken</h1>
+
+                        Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam velit
+                        percipit in, his delenit
+                        dolorem
+                        in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
+                        ne, utinam
+                        eripuit
+                        blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA05ksJvrUE" frameborder="0"
+                                allowfullscreen></iframe>
+                        Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
+                        vel. Ex
+                        eius
+                        dicam
+                        has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
+
+                        Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
+                        comprehensam an, eu
+                        summo
+                        possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
+                        dictas,
+                        minim
+                        eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
+                        accusam
+                        omnesque.
+
+                        Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
+                        explicari
+                        sadipscing
+                        no
+                        mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
+
+                        Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
+                        percipitur id,
+                        rebum
+                        graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
+                        essent
+                        virtute
+                        quo,
+                        ullum tritani reformidans ei nam.
+
+                    </div>
+                    <div class="familyTextBlock">
+                        <h1>Religion</h1>Lorem ipsum dolor sit amet, vidit omnes pro in, ad vim cibo mundi choro. Eam
+                        velit
+                        percipit in, his delenit
+                        dolorem
+                        in. Eius vidit tractatos pro te, mel aeque propriae molestiae ea. Stet sanctus definitionem nec
+                        ne, utinam
+                        eripuit
+                        blandit mei no. At sed consul audire, ei mel apeirian aliquando, mel eu deleniti salutandi.
+
+                        Utroque recteque suscipiantur eam et. Eu nec porro impedit dolores. Ut labore senserit molestiae
+                        vel. Ex
+                        eius
+                        dicam
+                        has, ne eum enim populo aliquando, et has meliore fabellas. Sit id timeam impedit.
+
+                        Amet splendide scriptorem ex eos, nusquam rationibus has ad. Sea albucius intellegebat
+                        comprehensam an, eu
+                        summo
+                        possim minimum vim. Pri ut dicunt discere mediocrem, sea scripta docendi ad. Eam te ipsum dolore
+                        dictas,
+                        minim
+                        eloquentiam eam eu. Lorem qualisque ei per, alia equidem te vis. Nam et autem mazim, ut vis
+                        accusam
+                        omnesque.
+
+                        Id his purto volumus vivendum, tale prompta ocurreret qui ne. Vix probo adipisci ei, augue
+                        explicari
+                        sadipscing
+                        no
+                        mei, autem modus corpora quo ex. Audire corpora nominavi ea vis. Ex sed putant conceptam.
+
+                        Ne libris aeterno quo. Nobis inciderint ad pro. Has ei ipsum inermis. Has ludus aliquando
+                        percipitur id,
+                        rebum
+                        graeco te mel. Appetere postulant quo at, amet consequat cu vel, ei quem facer fuisset vim. Te
+                        essent
+                        virtute
+                        quo,
+                        ullum tritani reformidans ei nam.
+                    </div>
+                    <div class="familyTextBlock">
+                        <h1>Freizeitgestaltung</h1>
+                        ............
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide3">
+            <div class="content_container">
+                <div class="content">
+                    <h1>Familie 3</h1>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
 </div>
 <div class="footer-container">
@@ -313,7 +412,7 @@
         <li><a href='../AbInDieWohnzimmer/contact.html'><span>Contact</span></a></li>
         <li><a href='../AbInDieWohnzimmer/aboutUs.html'><span>About Us</span></a></li>
     </ul>
-    </div>
+</div>
 
 </body>
 </html>

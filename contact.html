@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/family.css" />
+    <link rel="stylesheet" type="text/css" href="styles/family.css"/>
     <link rel="stylesheet" type="text/css" href="styles/nav.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/vendor/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="styles/vendor/jquery.fullPage.css"/>
     <link rel="stylesheet" type="text/css" href="styles/main.css"/>
 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.fullPage.js"></script>
 
-   <script>
-        $(document).ready(function() {
+    <script>
+        $(document).ready(function () {
             $('#fullpage').fullpage({
                 scrollOverflow: true
             });
@@ -25,15 +25,14 @@
 <div id="header_container">
     <nav id="header">
         <ul>
-            <li class="current-menu-item"><a href="#">Home</a></li>
             <li>
-                <a href="#">Karte</a>
+                <a href="../AbInDieWohnzimmer/Karte/karte.html">Karte</a>
             </li>
             <li><a href="../AbInDieWohnzimmer/families/family.html">Familien</a>
                 <ul>
-                        <li><a href="../AbInDieWohnzimmer/families/family.html#slide1">Familie 1</a></li>
-                        <li><a href="../AbInDieWohnzimmer//families/family.html#slide2">Familie 2</a></li>
-                        <li><a href="../AbInDieWohnzimmer//families/family.html#test" class="lastItem">Familie 3</a></li>
+                    <li><a href="../AbInDieWohnzimmer/families/family.html#slide1">Familie 1</a></li>
+                    <li><a href="../AbInDieWohnzimmer/families/family.html#slide2">Familie 2</a></li>
+                    <li><a href="../AbInDieWohnzimmer/families/family.html#test" class="lastItem">Familie 3</a></li>
                 </ul>
             </li>
             <li><a href="../AbInDieWohnzimmer/pointsOfDiversity/pointsOfDiversity.html">Orte der Vielfalt</a>
@@ -50,60 +49,61 @@
 <div id="fullpage">
     <div class="content_container">
         <div class="contact"><!-- @todo CHANGE DIV CLASS to ID in CSS -->
-	<h1>
-		Kontakt
-	</h1>
+            <h1>
+                Kontakt
+            </h1>
 
-	<form action="" method="POST">
-		<table>
-			<tr>
-				<td><span>Sprache:</span></td>
-				<td><select name="language" size="1">
-						<option>Deutsch</option>
-						<option>Englisch</option>
-					</select></td>
-			</tr>
+            <form action="" method="POST">
+                <table>
+                    <tr>
+                        <td><span>Sprache:</span></td>
+                        <td><select name="language" size="1">
+                            <option>Deutsch</option>
+                            <option>Englisch</option>
+                        </select></td>
+                    </tr>
 
-			<tr>
-				<td><label><span>Männlich</span><input type="radio" name="gender" value="male" checked/></label></td>
-				<td><label><span>Weiblich</span><input type="radio" name="gender" value="female"/></label></td>
-			</tr>
-			<tr>
-				<td><span>Vor/Nachname:</span></td>
-				<td><input type="text" name="firstname" value="<?php if (isset($firstname)) {
+                    <tr>
+                        <td><label><span>Männlich</span><input type="radio" name="gender" value="male" checked/></label>
+                        </td>
+                        <td><label><span>Weiblich</span><input type="radio" name="gender" value="female"/></label></td>
+                    </tr>
+                    <tr>
+                        <td><span>Vor/Nachname:</span></td>
+                        <td><input type="text" name="firstname" value="<?php if (isset($firstname)) {
 						echo $firstname;
 					} ?>"/>
-					<input type="text" name="lastname" value="<?php if (isset($lastname)) {
+                            <input type="text" name="lastname" value="<?php if (isset($lastname)) {
 						echo $lastname;
 					} ?>"/></td>
-			</tr>
-			<tr>
-				<td><span>E-Mail:</span></td>
-				<td><input type="text" name="email" value="<?php if (isset($mail)) {
+                    </tr>
+                    <tr>
+                        <td><span>E-Mail:</span></td>
+                        <td><input type="text" name="email" value="<?php if (isset($mail)) {
 						echo $mail;
 					} ?>" size="35"/></td>
-			</tr>
-			<tr>
-				<td><span>Betreff:</span></td>
-				<td><input type=" text" name="subject" value="<?php if (isset($subject)) {
+                    </tr>
+                    <tr>
+                        <td><span>Betreff:</span></td>
+                        <td><input type=" text" name="subject" value="<?php if (isset($subject)) {
 						echo $subject;
 					} ?>"/>
-				</td>
-			</tr>
-			<tr>
-				<td><span>Nachricht:</span></td>
-				<td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Nachricht:</span></td>
+                        <td>
 					<textarea style="resize:none" rows="5" name="message">
 
 					</textarea>
-				</td>
-			</tr>
-			<tr>
-				<td><input type="submit" name="submit" value="Kontakformular Absenden!"/></td>
-			</tr>
-		</table>
-	</form>
-	<?php
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit" value="Kontakformular Absenden!"/></td>
+                    </tr>
+                </table>
+            </form>
+            <?php
 	if (isset($_POST['submit'], $_POST['firstname'], $_POST['lastname'])) {
 
 
@@ -137,29 +137,29 @@
 
 		if ($language === "Deutsch") {
 			echo "Sehr " . $salutation . " " . $gender . " " . $name . ",<br/>";
-			echo "vielen Dank für ihre Kontaktanfrage mit dem Betreff " . "<b>" . $subject . "</b><br/>";
-			echo "und der folgenden Nachricht: <br/> <br/>" . $msg;
-			echo "<br/> Sie erhalten zusätzlich noch eine Bestätigungsmail! Wir werden uns bei Ihnen melden.";
+            echo "vielen Dank für ihre Kontaktanfrage mit dem Betreff " . "<b>" . $subject . "</b><br/>";
+            echo "und der folgenden Nachricht: <br/> <br/>" . $msg;
+            echo "<br/> Sie erhalten zusätzlich noch eine Bestätigungsmail! Wir werden uns bei Ihnen melden.";
 
-		} elseif ($language === "Englisch") {
-			echo "Dear " . $salutation . " " . $gender . " " . $name . ",<br/>";
-			echo "thanks for your contact request with the subject " . "<b>" . $subject . "</b><br/>";
-			echo "and the following message: <br/> <br/>" . nl2br($msg);
-			echo "<br/> You will receive a confirmation e-mail! We will contact you soon.";
-		}
+            } elseif ($language === "Englisch") {
+            echo "Dear " . $salutation . " " . $gender . " " . $name . ",<br/>";
+            echo "thanks for your contact request with the subject " . "<b>" . $subject . "</b><br/>";
+            echo "and the following message: <br/> <br/>" . nl2br($msg);
+            echo "<br/> You will receive a confirmation e-mail! We will contact you soon.";
+            }
 
-	}
+            }
 
-	?>
-</div>
+            ?>
+        </div>
     </div>
-    
+
     <div class="footer-container">
-    <ul class="footer">
-        <li><a href='#/impressum'><span>Impressum</span></a></li>
-        <li><a href='#/contact'><span>Contact</span></a></li>
-        <li><a href='#/aboutUs'><span>About Us</span></a></li>
-    </ul>
+        <ul class="footer">
+            <li><a href='impressum.html'><span>Impressum</span></a></li>
+            <li><a href='contact.html'><span>Contact</span></a></li>
+            <li><a href='aboutUs.html'><span>About Us</span></a></li>
+        </ul>
     </div>
 
 </body>
