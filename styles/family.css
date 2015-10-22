@@ -2,7 +2,8 @@
 #familypicture{
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 5%;
 }
 
 #slide1 {
@@ -30,5 +31,5 @@
 }
 
 .familyTextBlock{
-    margin-bottom: 1.5%;
+    margin-bottom: 5%;
 }
