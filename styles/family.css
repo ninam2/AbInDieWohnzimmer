@@ -2,7 +2,8 @@
 #familypicture{
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 5%;
 }
 
 #slide1 {
@@ -39,6 +40,11 @@
     vertical-align: middle;
 }
 
+<<<<<<< HEAD
 .arrow_img {
     height: 100%;
+=======
+.familyTextBlock{
+    margin-bottom: 5%;
+>>>>>>> master
 }
